@@ -12,6 +12,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun startGuest(view: View) {
+        val intent = Intent(this, homescreen::class.java)
+        startActivity(intent)
+    }
+
     fun openSignUp(view: View) {
         val intent = Intent(this, SignUp::class.java)
         startActivity(intent)
@@ -19,11 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     fun openLogin(view: View) {
         val intent = Intent(this, Login::class.java)
-        startActivity(intent)
-    }
-
-    fun startGuest(view: View) {
-        val intent = Intent(this, Guest::class.java)
         startActivity(intent)
     }
 
