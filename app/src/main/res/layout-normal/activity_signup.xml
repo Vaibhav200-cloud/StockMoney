@@ -36,7 +36,7 @@
             android:fontFamily="@font/montserratregular"
             android:gravity="bottom|left"
             android:text="@string/sign_up"
-            android:textColor="@android:color/black"
+            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -167,6 +167,18 @@
             app:layout_constraintTop_toBottomOf="@+id/signup_button"
             app:layout_constraintVertical_bias="0.034"
             tools:ignore="OnClick" />
+
+
+        <include
+            android:id="@+id/llProgressBar1"
+            layout="@layout/progress_bar"
+            android:layout_width="226dp"
+            android:layout_height="161dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

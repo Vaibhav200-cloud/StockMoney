@@ -12,19 +12,26 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun startGuest(view: View) {
+        val intent = Intent(this, homescreen::class.java)
+        startActivity(intent)
+        finish()
+    }
+
     fun openSignUp(view: View) {
         val intent = Intent(this, SignUp::class.java)
         startActivity(intent)
+        finish()
     }
 
     fun openLogin(view: View) {
         val intent = Intent(this, Login::class.java)
         startActivity(intent)
+        finish()
     }
 
-    fun mainActivity(view: View) {
-        val intent = Intent(this, MainActivity2::class.java)
-        startActivity(intent)
+    override fun onBackPressed() {
+        finish()
     }
 
 }
